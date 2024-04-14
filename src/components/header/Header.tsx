@@ -5,7 +5,7 @@ import { IoMenu } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <div className='z-[999] fixed top-0 w-full bg-transparent hover:border-b backdrop-blur-md'>
+    <div className='z-[999] fixed top-0 w-full bg-transparent shadow-sm backdrop-blur-md'>
       <div className='flex items-center justify-between mx-5 lg:mx-10 py-5'>
         <div className='flex items-center gap-2 cursor-pointer'>
           <Image src='https://metalogic.com.np/metalogo.png' alt='image' width={30} height={30} className='w-10 h-10' />
