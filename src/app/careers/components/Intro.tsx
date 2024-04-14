@@ -1,7 +1,7 @@
 
 const Intro = () => {
   return (
-    <div className=' z-[1] w-full h-full'>
+    <div className='z-[1] w-full h-full'>
       <div className='bg-[#c3c1c1] h-screen flex flex-col items-center justify-center gap-10'>
        <div className='pt-20'>
          <h1 className='text-xl font-semibold'>Careers</h1>
