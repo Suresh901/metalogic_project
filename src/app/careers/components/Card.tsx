@@ -6,19 +6,21 @@ interface Data {
         title: string;
         desc?: string;
     };
+    className?: string;
+    className2?: string;
 }
 
-const Card: React.FC<Data> = ({item}) => {
+const Card: React.FC<Data> = ({item, className, className2}) => {
   return (
-    <div className='border p-10 bg-white flex flex-col gap-3 rounded-2xl max-w-[400px] drop-shadow-xl' >
-        <div className='p-5 bg-[#f3f4f6] rounded-2xl w-20'>
+    <div className={`flex flex-col gap-3 rounded-2xl max-w-[400px] ${className}`}>
+        <div className={`${className2}`}>
             <Image src={item.logo} alt='' width={30} height={30}/>
         </div>
         <div>
-            <h1 className='text-2xl font-bold'>{item.title}</h1>
+            <h1 className='text-lg font-bold text-[#334767]'>{item.title}</h1>
         </div>
         <div>
-            <p>{item.desc}</p>
+            <p className='text-[14px]'>{item.desc}</p>
         </div>
     </div>
   )
