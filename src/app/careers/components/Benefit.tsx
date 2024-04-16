@@ -1,6 +1,10 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import Heading from './Heading'
 import Card from './Card'
+ import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+  
 
 const data = [
     {
@@ -49,11 +53,15 @@ const data = [
     
 ]
 const Benefit = () => {
+       useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className='bg-[#ffffff] flex flex-col container'>
         <div className='mx-5 xl:mx-10'>
        <Heading title1='Benefit' title='Life At MetaLogic' />
-        <div className='pb-20'>
+        <div className='pb-20' data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="2000">
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 justify-items-center mx-2'>
                 {data.map((item, id) => (
                     <Card key={id} item ={item} className='p-5 hover:border hover:shadow-lg w-full'/>
