@@ -2,12 +2,48 @@
 import { MdOutlineMail } from "react-icons/md";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Subscribe = () => {
+interface Input {
+email: string | null
+}
+
+const Subscribe: React.FC<Input> = () => {
    useEffect(() => {
     AOS.init();
   }, []);
+
+  
+
+  const [input, setInput]= useState<Input>({email: null})
+  const [err, setErr] = useState("")
+
+  const handleEmail = (e : React.ChangeEvent<HTMLInputElement>) =>{
+    const value= e.target.value
+    setInput({email:value})
+    validateEmail(value)
+  }
+
+  const validateEmail = (value:string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!value || !emailRegex.test(value)) {
+      setErr("Please enter a valid email address.");
+    } else {
+      setErr("");
+    }
+  };
+
+ const handleClick = () => {
+  if (!input.email || err) {
+    toast.error("Please enter a valid email address.");
+  } else {
+    toast.success("Thank you for subscribing!");
+  }
+  setInput({email:null})
+};
+
   return (
    <div className='bg-[#e6e6e6] py-20 '>
     <div className='container flex flex-col items-center justify-center gap-5 px-2' data-aos="fade-up"
@@ -16,15 +52,20 @@ const Subscribe = () => {
       <h1 className="font-semibold text-xl">Subscribe to our News Letters</h1>
       <p className="text-center">Stay informed, inspired, and equipped with the latest trends and breakthroughs in your field.</p>
     </div>
-    <div className=' w-full md:w-[800px] flex flex-col sm:flex-row items-center justify-center gap-5'>
-      <input 
-             type="text" 
+    <div className=' w-full md:w-[800px] flex flex-col sm:flex-row items-center justify-center gap-5 relative'>
+        <input 
+             type="email" 
              placeholder='Please Enter Your Email' 
              className='outline-none border-2 p-3 w-full md:w-[800px] rounded-md'
-            //  value={input.title || ''}
-            //  onChange={handleChange}
+             value={input.email || ''}
+             onChange={handleEmail}
             />
-      <button className='bg-[#ff4241] p-2 text-white rounded-md flex items-center justify-center gap-2 text-[18px] w-full sm:w-auto'> <MdOutlineMail size={25}/> Subscribe</button>
+            <h1 className="absolute top-[60px] left-0 text-[#e53b3a]">{err}</h1>
+      
+      <button className='bg-[#ff4241] p-2 text-white rounded-md flex items-center justify-center gap-2 text-[18px] w-full sm:w-auto'
+      onClick={handleClick}
+      > 
+      <MdOutlineMail size={25}/> Subscribe</button>
     </div>
     </div>
    </div>
