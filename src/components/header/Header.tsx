@@ -22,7 +22,7 @@ const Header = () => {
     pathname === "/careers" ? "text-black" : "text-white"
   );
   const [logoText, setLogoText] = useState(
-    pathname === "/careers" ? "text-gray-800" : "text-white"
+    pathname === "/careers" ? "text-sky-950" : "text-white"
   );
 
   //for header hidden while scrolling
@@ -45,7 +45,7 @@ const Header = () => {
    useEffect(() => {
     setNavbarBackground(pathname === "/careers" ? "bg-transparent" : "bg-darkblue-900");
     setTextColor(pathname === "/careers" ? "text-black" : "text-white");
-    setLogoText(pathname === "/careers" ? "text-gray-800" : "text-white");
+    setLogoText(pathname === "/careers" ? "text-sky-950" : "text-white");
   }, [pathname]); 
 
    const toggleMenu = () => {
@@ -60,8 +60,10 @@ const Header = () => {
       <div className='flex items-center justify-between mx-5 lg:mx-10 py-5'>
         <div className='flex items-center gap-2 cursor-pointer relative'>
           <Image src='https://metalogic.com.np/metalogo.png' alt='image' width={30} height={30} className='w-10 h-10' />
-          <h1 className={`text-2xl lg:text-3xl font-semibold text-${logoText}`}>MetaLogic</h1>
-          <GiInfo size={20} className='absolute top-[-10px] right-[-10px]'/>
+          <h1 className={`text-2xl lg:text-3xl font-semibold ${logoText}`}>MetaLogic</h1>
+          <a href='/hello.pdf' download>
+          <GiInfo size={20} className={`absolute top-[-10px] right-[-10px] ${logoText}`} />
+          </a>
         </div>
         <div className='lg:flex items-center gap-7 cursor-pointer font-semibold hidden text-md'>
           <Link href='/'>

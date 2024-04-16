@@ -6,31 +6,31 @@ import 'aos/dist/aos.css';
 
 const data = [
     {
-        logo: 'https://metalogic.com.np/careers/flexible.svg',
-        title: "Flexibility at work",
+        logo: 'https://metalogic.com.np/careers/bonus_1.svg',
+        title: "Performance Bonus",
     },
       {
-        logo: "https://metalogic.com.np/careers/ownership.svg",
-        title: "Take OwnerShip",
+        logo: "https://metalogic.com.np/careers/health.svg",
+        title: "Health Benefits",
     },
     
     {
-        logo: "https://metalogic.com.np/careers/growth.svg",
-        title: "Unlimited Growth",
+        logo: "https://metalogic.com.np/careers/paidleave.svg",
+        title: "Paid Leave Policy",
     },
    
     {
-        logo: "https://metalogic.com.np/careers/inclusivity.svg",
-        title: "Make Yourself Heard",
+        logo: "https://metalogic.com.np/careers/learning.svg",
+        title: "Learning And Development",
     },
    
     {
-        logo: "https://metalogic.com.np/careers/teamspirit.svg",
-        title: "Team Spirit",
+        logo: "https://metalogic.com.np/careers/food_1.svg",
+        title: "Food Credit",
     },
     {
-        logo: "https://metalogic.com.np/careers/inclusivity.svg",
-        title: "Inclusivity at Work",
+        logo: "https://metalogic.com.np/careers/teambuilding.svg",
+        title: "Team Activities",
     },
    
     
