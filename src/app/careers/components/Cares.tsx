@@ -52,7 +52,7 @@ const Cares = () => {
             data-aos-duration="1000"
             >
             <h1 className="text-2xl lg:text-4xl font-bold text-[#334767] pb-5">Metalogic Cares For You</h1>
-            <p className='text-[16px]'>We're less about valuing perks and more about valuing people. Our employee benefits are built around enhancing your wellbeing - at work and at home</p>
+            <p className='text-[16px]'>We&apos;re less about valuing perks and more about valuing people. Our employee benefits are built around enhancing your wellbeing - at work and at home</p>
         </div>
         <div className='pb-20 w-full md:w-2/3 flex items-center justify-center md:pt-20' 
             data-aos="fade-right"

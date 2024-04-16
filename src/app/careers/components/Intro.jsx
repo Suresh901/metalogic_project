@@ -31,8 +31,8 @@ const Intro = () => {
               </h1>
             </div>
             <div className="flex flex-col items-center text-lg gap-1">
-              <h2>We're continuously searching for the </h2>
-              <h2>right talent. Check if you're a good</h2>
+              <h2>We&apos;re continuously searching for the </h2>
+              <h2>right talent. Check if you&apos;re a good</h2>
               <h2>match.</h2>
             </div>
             <div>
