@@ -77,9 +77,9 @@ const Particle = () => {
         number: {
           density: {
             enable: true,
-            value_area: 800, // Adjust this value based on the screen height
+            value_area: 800,
           },
-          value: 150, // Adjust this value based on the screen height
+          value: 150,
         },
         opacity: {
           value: 1.0,
@@ -88,7 +88,7 @@ const Particle = () => {
           type: "circle",
         },
         size: {
-          value: { min: 1, max: 3 }, // Adjust this value based on the screen height
+          value: { min: 1, max: 3 },
         },
       },
       detectRetina: true,

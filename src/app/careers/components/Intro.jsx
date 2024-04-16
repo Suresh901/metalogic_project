@@ -10,7 +10,7 @@ const Intro = () => {
   }, []);
   return (
     <>
-      <div className="z-10 bg-gray-300 relative">
+      <div className="z-10 bg-gradient-to-b from-[#c3c1c1] via-[#dcdbdb] to-[#f5f5f5] relative">
         <div
           className="h-screen flex flex-col items-center justify-center gap-10 "
           data-aos="fade-up"
@@ -25,7 +25,7 @@ const Intro = () => {
             <div className="font-bold  text-3xl sm:text-4xl md:text-5xl lg:text-6xl flex flex-col items-center gap-2">
               <h1> Navigate Your Next </h1>
               <h1>
-                <span className="text-green-600">Career</span> Move
+                <span className="text-[#228b22]">Career</span> Move
               </h1>
             </div>
             <div className="flex flex-col items-center text-lg gap-1">
@@ -34,7 +34,7 @@ const Intro = () => {
               <h2>match.</h2>
             </div>
             <div>
-              <button className="bg-blue-900 px-8 py-2 text-white rounded-md hover:bg-blue-700">
+              <button className="bg-[#001c48] px-8 py-2 text-white rounded-md hover:bg-[#32496c]">
                 Explore Opportunities
               </button>
             </div>
