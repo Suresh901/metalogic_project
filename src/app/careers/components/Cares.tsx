@@ -4,6 +4,7 @@ import Card from './Card'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+ //array of obj
 const data = [
     {
         logo: 'https://metalogic.com.np/careers/bonus_1.svg',

@@ -5,6 +5,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Intro = () => {
+  //for animation rerender
   useEffect(() => {
     AOS.init();
   }, []);
@@ -16,6 +17,7 @@ const Intro = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
         >
+          {/* particle component for background animation */}
           <Particle className=" z-1" />
 
           <div className="absolute z-[10] flex flex-col items-center justify-center gap-10">

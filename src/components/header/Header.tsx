@@ -12,7 +12,7 @@ const Header = () => {
   const [visible, setVisible] = useState(true);
   const [open, setOpen] = useState(false)
 
-  //for header color for different path
+  //for header background color and text color for different path
   const pathname = usePathname();
 
   const [navbarBackground, setNavbarBackground] = useState(
@@ -55,9 +55,9 @@ const Header = () => {
   return (
     <>
     <div className={`z-[999] fixed top-0 w-full bg-transparent shadow-sm backdrop-blur-md transition-all duration-300 
-         ${navbarBackground} ${textColor}
-    ${visible ? 'opacity-100' : 'opacity-0 translate-y-[-100%]'}`}>
+         ${navbarBackground} ${textColor} ${visible ? 'opacity-100' : 'opacity-0 translate-y-[-100%]'}`}>
       <div className='flex items-center justify-between mx-5 lg:mx-10 py-5'>
+
         <div className='flex items-center gap-2 cursor-pointer relative'>
           <Image src='https://metalogic.com.np/metalogo.png' alt='image' width={30} height={30} className='w-10 h-10' />
           <h1 className={`text-2xl lg:text-3xl font-semibold ${logoText}`}>MetaLogic</h1>
@@ -65,6 +65,8 @@ const Header = () => {
           <GiInfo size={20} className={`absolute top-[-10px] right-[-10px] ${logoText}`} />
           </a>
         </div>
+
+        {/* routes amd menu*/}
         <div className='lg:flex items-center gap-7 cursor-pointer font-semibold hidden text-md'>
           <Link href='/'>
             <h1>Home</h1>
@@ -88,6 +90,7 @@ const Header = () => {
         </div>
         <button className='bg-[#e53b3a] text-white text-md px-4 py-2 rounded-md text-sm font-semibold hidden lg:block'>Get In Touch</button>
 
+      {/* mobile menu or side menu bar */}
         <div className='lg:hidden text-[#e53b3a]'>
           <IoMenu className='text-[40px] md:text-[50px]' 
           onClick={toggleMenu}/>

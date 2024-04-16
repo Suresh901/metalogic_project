@@ -5,7 +5,7 @@ import Card from './Card'
  import AOS from 'aos';
 import 'aos/dist/aos.css'; 
   
-
+ //array of obj
 const data = [
     {
         logo: 'https://metalogic.com.np/careers/flexible.svg',
@@ -59,6 +59,7 @@ const Benefit = () => {
   return (
     <div className='bg-[#ffffff] flex flex-col container'>
         <div className='mx-5 xl:mx-10'>
+        {/* heading component */}
        <Heading title1='Benefit' title='Life At MetaLogic' />
         <div className='pb-20' data-aos="fade-up"
             data-aos-anchor-placement="top-bottom" data-aos-duration="2000">

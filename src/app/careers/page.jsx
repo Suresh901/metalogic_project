@@ -9,7 +9,7 @@ import Subscribe from "./components/Subscribe";
 const page = () => {
   return (
     <div>
-      <Intro id="particles " />
+      <Intro />
       <Value />
       <Benefit />
       <Cares />

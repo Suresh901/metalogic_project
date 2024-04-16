@@ -5,7 +5,7 @@ import Heading from './Heading'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-
+//array of obj 
 const data = [
     {
         logo: 'https://metalogic.com.np/_next/static/media/continious_learning.36f5be64.svg',
@@ -47,6 +47,7 @@ const Value = () => {
      useEffect(() => {
     AOS.init();
   }, []);
+  
   return (
     <div className='bg-[#f6f8ff] flex flex-col items-center'>
     <div className='mx-5 xl:mx-20' >

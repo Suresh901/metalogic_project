@@ -2,7 +2,6 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim";
-import Intro from "./Intro";
 
 const Particle = () => {
   //react particles

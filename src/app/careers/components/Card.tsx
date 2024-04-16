@@ -1,5 +1,7 @@
 import Image from 'next/image'
 
+
+//defining types of data
 interface Data {
     item: {
         logo: string;
@@ -11,6 +13,7 @@ interface Data {
     className3?: string;
 }
 
+// React.FC denotes that the component is a functional component 
 const Card: React.FC<Data> = ({item, className, className2, className3}) => {
   return (
     <div className={`flex flex-col gap-3 rounded-2xl ${className}`}>
