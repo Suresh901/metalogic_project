@@ -16,9 +16,9 @@ const Search: React.FC<Props> = ({handleChange, input}) => {
     AOS.init();
   }, []);
   return (
-    <>
+    <div className='md:px-5 lg:px-0'>
           <Heading title='Available Vacancies' title1='Opportunities' className='text-[#eab308]' />
-        <div className='flex items-center justify-center flex-col pb-10 mx-5 gap-5' data-aos="fade-up"
+        <div className='flex items-center justify-center flex-col pb-10 gap-5 px-2' data-aos="fade-up"
      data-aos-duration="2000">
              <input 
              type="text" 
@@ -40,7 +40,7 @@ const Search: React.FC<Props> = ({handleChange, input}) => {
             </button>
             </div>
         </div>
-    </>
+    </div>
   )
 }
 

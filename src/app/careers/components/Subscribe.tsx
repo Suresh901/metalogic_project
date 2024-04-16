@@ -16,7 +16,6 @@ const Subscribe: React.FC<Input> = () => {
   }, []);
 
   
-
   const [input, setInput]= useState<Input>({email: null})
   const [err, setErr] = useState("")
 
@@ -52,7 +51,7 @@ const Subscribe: React.FC<Input> = () => {
       <h1 className="font-semibold text-xl">Subscribe to our News Letters</h1>
       <p className="text-center">Stay informed, inspired, and equipped with the latest trends and breakthroughs in your field.</p>
     </div>
-    <div className=' w-full md:w-[800px] flex flex-col sm:flex-row items-center justify-center gap-5 relative'>
+    <div className=' w-full md:w-[800px] flex flex-col sm:flex-row items-center justify-center gap-5 relative md:px-5 lg:px-0'>
         <input 
              type="email" 
              placeholder='Please Enter Your Email' 
@@ -60,7 +59,7 @@ const Subscribe: React.FC<Input> = () => {
              value={input.email || ''}
              onChange={handleEmail}
             />
-            <h1 className="absolute top-[60px] left-0 text-[#e53b3a]">{err}</h1>
+            <h1 className="hidden md:block absolute md:top-[60px] left-0 text-[#e53b3a] md:px-5 lg:px-0">{err}</h1>
       
       <button className='bg-[#ff4241] p-2 text-white rounded-md flex items-center justify-center gap-2 text-[18px] w-full sm:w-auto'
       onClick={handleClick}
