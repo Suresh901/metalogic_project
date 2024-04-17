@@ -39,8 +39,8 @@ const Particle = () => {
           },
           onHover: {
             enable: true,
-            mode: "grab",
-            // mode: "repulse",
+            // mode: "grab",
+            mode: "repulse",
           },
         },
         modes: {
