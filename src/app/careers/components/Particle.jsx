@@ -40,15 +40,16 @@ const Particle = () => {
           onHover: {
             enable: true,
             mode: "grab",
+            // mode: "repulse",
           },
         },
         modes: {
           push: {
-            distance: 200,
+            distance: 150,
             duration: 15,
           },
           grab: {
-            distance: 150,
+            distance: 200,
           },
         },
       },
@@ -58,7 +59,7 @@ const Particle = () => {
         },
         links: {
           color: "#FFFFFF",
-          distance: 150,
+          distance: 300,
           enable: true,
           opacity: 1,
           width: 2,

@@ -61,7 +61,7 @@ const Header = () => {
         <div className='flex items-center gap-2 cursor-pointer relative'>
           <Image src='https://metalogic.com.np/metalogo.png' alt='image' width={30} height={30} className='w-10 h-10' />
           <h1 className={`text-2xl lg:text-3xl font-semibold ${logoText}`}>MetaLogic</h1>
-          <a href='/hello.pdf' download>
+          <a href='/Reason.pdf' download>
           <GiInfo size={20} className={`absolute top-[-10px] right-[-10px] ${logoText}`} />
           </a>
         </div>

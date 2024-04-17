@@ -6,6 +6,8 @@ import { useEffect, useState } from "react";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
+//define types
 interface Input {
 email: string | null
 }
@@ -24,7 +26,7 @@ const Subscribe: React.FC<Input> = () => {
     setInput({email:value})
     validateEmail(value)
   }
-
+//email validation
   const validateEmail = (value:string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!value || !emailRegex.test(value)) {
@@ -33,7 +35,7 @@ const Subscribe: React.FC<Input> = () => {
       setErr("");
     }
   };
-
+ //toast message for actions
  const handleClick = () => {
   if (!input.email || err) {
     toast.error("Please enter a valid email address.");
