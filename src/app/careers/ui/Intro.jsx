@@ -1,5 +1,5 @@
 "use client";
-import Particle from "./Particle";
+import Particle from "../components/Particle";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

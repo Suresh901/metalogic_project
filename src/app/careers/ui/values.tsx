@@ -1,7 +1,7 @@
 "use client"
 import { useEffect } from 'react';
-import Card from './Card'
-import Heading from './Heading'
+import Card from '../components/Card'
+import Heading from '../components/Heading'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 

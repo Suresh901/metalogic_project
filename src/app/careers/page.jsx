@@ -1,10 +1,10 @@
-import Benefit from "./components/Benefit";
-import Cares from "./components/Cares";
-import Intro from "./components/Intro";
-import Value from "./components/values";
-import Opportunities from "./components/Opportunities";
+import Benefit from "./ui/Benefit";
+import Cares from "./ui/Cares";
+import Intro from "./ui/Intro";
+import Value from "./ui/values";
+import Opportunities from "./ui/Opportunities";
 import "./page.css";
-import Subscribe from "./components/Subscribe";
+import Subscribe from "./ui/Subscribe";
 
 const page = () => {
   return (

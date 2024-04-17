@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
-import Search from './Search';
-import Job from './Job';
+import Search from '../components/Search';
+import Job from '../components/Job';
 
 interface Input {
 title: string | null
