@@ -62,7 +62,7 @@ const Cares = () => {
             >
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3 lg:mx-20 justify-items-center'>
                 {data.map((item, id) => (
-                    <Card key={id} item ={item} className='px-5 py-14 bg-[#fffff6] border drop-shadow-md min-w-[200px] text-[16px]'/>
+                    <Card key={id} item ={item} className='px-5 py-14 bg-[#fffff6] border drop-shadow-md min-w-[200px] text-[16px]' className3='w-[150px]'/>
                 ))}
             </div>
         </div> 
